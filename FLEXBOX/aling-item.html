@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: #23b791;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-star{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>LINE</h1>
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <section class="container center stretch">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>flex-star</h2>
+    <section class="container flex-star">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3. lorem ipusm dolor sit amet</div>
+    </section>
+
+    <h2>flex-end</h2>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3. lorem ipusm dolor sit amet</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container baseline">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3. lorem ipusm dolor sit amet</div>
+    </section>
+
+    <h1>COLUMN</h1>
+
+    <h2>Center column</h2>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>Stretch column</h2>
+    <section class="container center stretch column">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>flex-star column</h2>
+    <section class="container flex-star column">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3. lorem ipusm dolor sit amet</div>
+    </section>
+
+    <h2>flex-end column</h2>
+    <section class="container flex-end column">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3. lorem ipusm dolor sit amet</div>
+    </section>
+
+    <h2>Baselin column</h2>
+    <section class="container baseline  column">
+        <div class="item">item 1</div>
+        <div class="item"> lorem ipusm dolor sit amet</div>
+        <div class="item">Item 3. lorem ipusm dolor sit amet</div>
+    </section>
+</body>
+</html>
