@@ -1,5 +1,20 @@
+:root{
+--vermelho:red;
+--preto: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elemento base*/
+
 body{
     /* background-color: black; */
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
    
 }
    
@@ -9,16 +24,11 @@ header .container{
     display: flex; /* fica alinhado na tela, no caso na div */
     align-items: center;
     justify-content: space-between;
-    
+    height: 70px;
     }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 header .logo{
     font-family: 'Arial', sans-serif; /* Substitua pela fonte desejada */
-    font-size: 24px;
+    font-size: 35px;
     color: #e50914; /* Cor da fonte da Netflix */
     letter-spacing: 2px; /* Espaçamento entre as letras */
     display: inline-block;
@@ -32,3 +42,61 @@ header nav a {
 header nav a:hover{
 color: #fff;
 }
+
+/*Elemento do Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-principal.jpg'); /*camada fina dentro da imagem para melhorar o contraste*/
+    
+    background-size: cover ; /*especifica o tamanho da imagem dentro da div */
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align:left;
+    margin-left: 20px;
+}
+.titulo{
+    margin: 20px;
+    font-size: 40px ;
+    
+   
+}
+.botao{
+    margin-left: 20px;
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: #AAA;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 10px;
+}
+
